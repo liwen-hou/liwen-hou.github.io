@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Favorite Architects</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery-2.1.3.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-default">
+        <div class="welcome">
+            <img id="welcome-img" src="img/bg.jpg">
+        </div>
+        <div class="main-body">
+            <div class="container-fluid center-block">
+                <nav class="navbar navbar-default navbar-fixed-top navbar-fix" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <!-- Responsive nav bar settings -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!-- Nav bar content -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#ando"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Architects</a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Gallery <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#ando-gal">Tadao Ando</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#zaha-gal">Zaha Hadid</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#shu-gal">Wang-Shu</a></li>
+                                </ul>
+                            </li>
+                            <li><a type="button" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>Share</a></li>
+
+                            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" id="close-share" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="share">Share with friends..</h4>
+                                        </div>
+                                        <div class="modal-body" id="share">
+                                            <div class="row"><a id="share-link" href="http://www.facebook.com"><i class="fa fa-facebook-official"></i></a>Share to Facebook</div>
+                                            <div class="row"><a id="share-link" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>Share to Twitter</div>
+                                            <div class="row"><i class="fa fa-envelope-o"></i>Send an E-mail</div>
+                                            <div class="row">
+                                                <div class="col-sm-12" id="submitted">
+                                                    <!-- jQuery return -->
+                                                </div>
+                                                <div class="col-xs-8">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="inputEmail" placeholder="me@example.com" class="required" data-toggle="tooltip" data-placement="top" title="Required">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <button id="send-email" type="button" class="btn btn-primary">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div>   
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+            <div class="container-fluid center-block" id="ando">
+                <div class="container center-block">
+                    <div class="row">
+                        <div class="col-sm-4"><img id="profile" src="img/ando.jpg"></div>
+                        <div class="col-sm-8" id="ando-description">
+                            <h2>Tadao Ando</h2>
+                            <p></br>Ando was born a few minutes before his twin brother in 1941 in Osaka, Japan. At the age of two, his family chose to separate them, and have Tadao live with his grandmother. He worked as a truck driver and boxer before settling on the profession of architect, despite never having formal training in the field. Struck by the Frank Lloyd Wright-designed Imperial Hotel on a trip to Tokyo as a second-year high school student, he eventually decided to end his boxing career less than two years after graduating from high school to pursue architecture.    </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid center-block" id="zaha">
+                <div class="container center-block">
+                    <div class="row" id="zaha-profile">
+                        <div class="col-sm-8" id="zaha-description">
+                            <h2>Zaha Hadid</h2>
+                            <p></br>Dame Zaha Mohammad Hadid,(born 31 October 1950) is an Iraqi-British architect. She received the Pritzker Architecture Prize in 2004—the first woman to do so—and the Stirling Prize in 2010 and 2011.
+
+    Her buildings are distinctively neofuturistic, characterised by the "powerful, curving forms of her elongated structures"[1] with "multiple perspective points and fragmented geometry to evoke the chaos of modern life".[2] She is currently professor at the University of Applied Arts Vienna in Austria.
+                            </p>
+                        </div>
+                    <div class="col-sm-4" id="zaha-img"><img id="profile" src="img/zaha.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid center-block" id="shu">
+                <div class="container center-block">
+                    <div class="row">
+                        <div class="col-sm-4"><img id="profile" src="img/shu.jpg"></div>
+                        <div class="col-sm-8" id="shu-description">
+                            <h2>Wang-Shu</h2>
+                            <p></br>Wang Shu was born on 4 November 1963 in Ürümqi, the capital of the Xinjiang Uyghur Autonomous Region in China's far west. He began to draw and paint as a child, without any formal training in art. Despite the anti-intellectual fervor of the "cultural revolution" (1966-76), his mother gave him access to the library and he read widely, from "Pushkin to Lu Xun." As a compromise between art, his passion, and engineering, his parents' recommendation, Wang chose to study architecture at the Nanjing Institute of Technology (now Southeast University) in Nanjing, Jiangsu Province and received a bachelor's degree in 1985 and a master's degree in 1988.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid center-block" id="ando-gal">
+                <div class="container center-block">
+
+                    <h3>Ando's Work</h3>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/ando1-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-1">
+
+                            <div class="modal fade bs-example-modal-lg-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="ando1" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#ando1" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#ando1" data-slide-to="1"></li>
+                                                        <li data-target="#ando1" data-slide-to="2"></li>
+                                                        <li data-target="#ando1" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/ando1-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando1-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando1-4.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando1-5.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#ando1" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#ando1" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description">
+
+                                                <h4>Church of The Light</h4><p>The Church of the Light (sometimes called the "Church with Light") is the main chapel of the Ibaraki Kasugaoka Church, a member church of the United Church of Christ in Japan. It was built in 1989, in the city of Ibaraki, Osaka Prefecture. This building is one of the most famous designs of Japanese architect Tadao Ando.</p></div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Church of the Light</h4>Ibaraki, Japan</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/ando2-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-2">
+
+                            <div class="modal fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="ando2" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#ando2" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#ando2" data-slide-to="1"></li>
+                                                        <li data-target="#ando2" data-slide-to="2"></li>
+                                                        <li data-target="#ando2" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/ando2-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando2-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando2-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando2-5.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#ando2" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#ando2" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description">
+                                                <h4>Pulitzer Arts Foundation</h4>
+                                                <p>Pulitzer Arts Foundation in St. Louis, Missouri opened in 2001 with a building designed by internationally renowned Japanese architect, Tadao Ando. The Pulitzer is located at 3716 Washington Boulevard.</p>
+                                                <p>Pulitzer Arts Foundation was established in 2001 by Emily Rauh Pulitzer, who had originally sought to create a space in which to install works from their private collection. The Pulitzers reached out to Tadao Ando in the early 1990s and commissioned him to renovate an abandoned automobile factory and showroom in the Grand Center entertainment district of St. Louis.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Pulitzer Arts Foundation</h4>St. Louis, Missouri</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <img id="gallery" src="img/ando3-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-3">
+
+                            <div class="modal fade bs-example-modal-lg-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="ando3" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#ando3" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#ando3" data-slide-to="1"></li>
+                                                        <li data-target="#ando3" data-slide-to="2"></li>
+                                                        <li data-target="#ando3" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/ando3-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando3-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando3-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando3-5.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#ando3" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#ando3" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description">
+                                                <h4>Hyogo Prefectural Museum of Arts</h4>
+                                                <p>The Hyōgo Prefectural Museum of Art is a purpose built municipal art gallery in Nada-ku, Kobe, Hyōgo Prefecture, Japan. It was opened in 2002.
+
+                                                <p>The major collections of the museum are foreign and Japanese sculptures, foreign and Japanese prints, Western-style and Japanese-style paintings associated with Hyogo Prefecture, Japanese greatworks in modern era, and contemporary art.</p>
+
+                                                <p>The building of the museum is a modern, concrete construction by famed architect Tadao Ando.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Hyogo Prefectural Museum of Arts</h4>Hyogo, Japan</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <img id="gallery" src="img/ando4-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-4">
+
+                            <div class="modal fade bs-example-modal-lg-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="ando4" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#ando4" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#ando4" data-slide-to="1"></li>
+                                                        <li data-target="#ando4" data-slide-to="2"></li>
+                                                        <li data-target="#ando4" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/ando4-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando4-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando4-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/ando4-5.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#ando4" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#ando4" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description">
+                                                <h4>Teshima Arts Museum</h4>
+                                                <p>The Teshima Art Museum hosts a single piece of artwork and is located on the island of Teshima, Kagawa Prefecture, Japan, in the Seto Inland Sea. It is operated by the Benesse Foundation. The architect is Ryue Nishizawa (co-founder of SANAA). The museum building is made of a freestanding concrete shell, 40 by 60 meters, and 4 meters at its highest point.</p>
+
+                                                <p>The artwork is titled Matrix and was created by sculptor Rei Naito.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Teshima Arts Museum</h4>Teshima, Japan</div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="container-fluid center-block" id="zaha-gal">
+                <div class="container center-block">
+                    <h3>Zaha's Work</h3>
+                    <div class="row" id="zaha-profile">
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/zaha1-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-5">
+
+                            <div class="modal fade bs-example-modal-lg-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="zaha1" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#zaha1" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#zaha1" data-slide-to="1"></li>
+                                                        <li data-target="#zaha1" data-slide-to="2"></li>
+                                                        <li data-target="#zaha1" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/zaha1-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha1-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha1-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha1-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#zaha1" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#zaha1" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description">
+                                                <h4>D'Leedon Condonium</h4>
+                                                <p>D’Leedon – the distinctive 36-storey condominium prominent for their petering vertical silhouette – is designed by internationally-renowned architect Zaha Hadid.</p>
+
+                                                <p>Located in prime district 10, D’Leedon is a short walk to Farrer Road MRT station. Nearby recreational facilities includes the Singapore Botanic Garden and Bougainvillea Park. Residents can get their necessities at the Empress Road Market and Food Centre or at the shopping centres close by. There is a string of shops, restaurants, and eating establishments at Holland Village, which is in close proximity.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>D'Leedon Condonium</h4>Singapore</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/zaha2-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-6">
+
+                            <div class="modal fade bs-example-modal-lg-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="zaha2" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#zaha2" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#zaha2" data-slide-to="1"></li>
+                                                        <li data-target="#zaha2" data-slide-to="2"></li>
+                                                        <li data-target="#zaha2" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/zaha2-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha2-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha2-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha2-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#zaha2" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#zaha2" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description"><h4>Dubai Opera House</h4><p>Before the 2008 property crash hit Dubai, the Dubai Opera House was scheduled to be the cultural centre of the proposed Lagoons district of Dubai, United Arab Emirates with preparatory work underway in anticipation of groundbreaking. This development will accommodate an opera house with a 2,500 seating capacity, an 800-seat playhouse, a 5,000-square-metre (54,000 sq ft) arts gallery, a performing arts school, and a '6-star' themed hotel on a purpose-built island in Dubai Creek. It is also said that it will feature two libraries, an outdoor theatre, and a marina.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Dubai Opera House</h4>Dubai, United Arab Emirates</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/zaha3-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-7">
+
+                            <div class="modal fade bs-example-modal-lg-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="zaha3" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#zaha3" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#zaha3" data-slide-to="1"></li>
+                                                        <li data-target="#zaha3" data-slide-to="2"></li>
+                                                        <li data-target="#zaha3" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/zaha3-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha3-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha3-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha3-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#zaha3" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#zaha3" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description">
+                                                <h4>Dongdaemun Design Plaza</h4>
+                                                <p>The Dongdaemun Design Plaza is a major urban development landmark in Seoul, South Korea designed by Zaha Hadid and Samoo, with a distinctively neofuturistic design characterized by the "powerful, curving forms of elongated structures". The landmark features a walkable park on its roofs, large global exhibition spaces, futuristic retail stores and restored parts of the Seoul fortress.</p>
+
+                                                <p>The DDP has been one of the main reasons for Seoul's designation as World Design Capital in 2010. Construction started in 2009 and it was officially inaugurated on March 21, 2014.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Dongdaemun Design Plaza</h4>Seoul, Korea</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/zaha4-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-8">
+
+                            <div class="modal fade bs-example-modal-lg-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="zaha4" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#zaha4" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#zaha4" data-slide-to="1"></li>
+                                                        <li data-target="#zaha4" data-slide-to="2"></li>
+                                                        <li data-target="#zaha4" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/zaha4-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha4-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha4-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/zaha4-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#zaha4" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#zaha4" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description"><h4>Soho Galaxy</h4><p>The popularity of Zaha Hadid seems to be permanent, receiving awards and being widely featured in the media. Her buildings already became the contemporary heritage that attracts not only architectural audiences and developers but mainstream media and regular tourists as well. According to a recent RIBA nomination for Beijing’s Galaxy SOHO for the Lubetkin Prize 2013 – the award for architects that play a leading role in delivering visionary thinking about urban issues – Zaha Hadid is a role-model, filling the voids of the present with new, futuristic environments. RIBA’s words are a precise description of her works and contribution to the architectural world.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Soho Galaxy</h4>Beijing, China</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid center-block" id="shu-gal">
+                <div class="container center-block">
+                    <h3>Shu's Work</h3>
+                    <div class="row" id="zaha-profile">
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/shu1-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-9">
+
+                            <div class="modal fade bs-example-modal-lg-9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="shu1" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#shu1" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#shu1" data-slide-to="1"></li>
+                                                        <li data-target="#shu1" data-slide-to="2"></li>
+                                                        <li data-target="#shu1" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/shu1-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu1-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu1-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu1-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#shu1" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#shu1" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description"><h4>Ningbo History Museum</h4><p>Ningbo Museum is designed by Wang Shu, the first Chinese citizen to win the Pritzker Architecture Prize in 2012. The design is a conceptual combination of mountains, water and oceans, as the East China Sea has played an important role in the history of Ningbo. Features of Jiangnan residences are integrated into the museum design by decorations made from old tiles and bamboo.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Ningbo History Museum</h4>Ningbo, China</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/shu2-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-10">
+
+                            <div class="modal fade bs-example-modal-lg-10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="shu2" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#shu2" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#shu2" data-slide-to="1"></li>
+                                                        <li data-target="#shu2" data-slide-to="2"></li>
+                                                        <li data-target="#shu2" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/shu2-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu2-2.jpeg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu2-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu2-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#shu2" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#shu2" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description"><h4>Ceramic House</h4><p>The small house of one hundred square meters, - a café -, Shu decided to make it a container. Whether it will hold wind or water is completely determined by intuition.
+    Where a design will start is often accidental. For instance, in this case Shu can explain it by the form of an ink stone from the Song Dynasty [960-1279]. The ink stone is made for the function only. His surface is made of two parts. One is comparatively plain and the other is a slope. The plain part is for storing ink and the slope part is for dripping ink. </p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Ceramic House</h4>Jinhua, China</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/shu3-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-11">
+
+                            <div class="modal fade bs-example-modal-lg-11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="shu3" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#shu3" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#shu3" data-slide-to="1"></li>
+                                                        <li data-target="#shu3" data-slide-to="2"></li>
+                                                        <li data-target="#shu3" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/shu3-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu3-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu3-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu3-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#shu3" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#shu3" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description"><h4>Five Scattered Houses</h4><p>The series of five structures that reinterpret the traditional building culture were commissioned in 2004 and completed by 2008 in a 25 hectare park in the center of the Yinzhou New Town, Ningbo District. The series of five structures were completed by 2008 in a 25 hectare park in the center of the Yinzhou New Town, Ningbo District, 250km south of Shanghai.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>Five Scattered Houses</h4>Ningbo, China</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+
+                            <img id="gallery" src="img/shu4-1.jpg" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-12">
+
+                            <div class="modal fade bs-example-modal-lg-12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <button type="button" id="close-gal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+                                                <div id="shu4" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#shu4" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#shu4" data-slide-to="1"></li>
+                                                        <li data-target="#shu4" data-slide-to="2"></li>
+                                                        <li data-target="#shu4" data-slide-to="3"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="img/shu4-1.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu4-2.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu4-3.jpg">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="img/shu4-4.jpg">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#shu4" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#shu4" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="album-description"><h4>China Academy of Arts</h4><p>China Academy of Art is the most influential academy of fine arts with the most complete range of degree offerings and programs of study in China. It houses a diverse pool of artistic talent, has a distinctive structure integrating theory and practice, focuses on human care and social needs, and combines modern technical and cultural disciplines with traditional artistic ones. </p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="archi-description"><h4>China Academy of Arts</h4>Hangzhou, China</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <footer>
+                <p>&copy; NUS CS3240 Interaction Design - AY 2014/2015 Sem 2.</p>
+            </footer>
+            <!-- JavaScript placed at the end of the document so the pages load faster -->
+            <script src="js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>
