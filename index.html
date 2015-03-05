@@ -5,15 +5,18 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,s300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
         <link href="css/style.css" rel="stylesheet">
         <script src="js/jquery-2.1.3.js"></script>
         <script src="js/custom.js"></script>
     </head>
     <body data-spy="scroll" data-target=".navbar-default">
+    <div id="fb-root"></div>
+        
         <div class="welcome">
             <img id="welcome-img" src="img/bg.jpg">
+            <div class="quote"><p>We shape our buildings;<p>Thereafter they shape us.</p></div>
         </div>
         <div class="main-body">
             <div class="container-fluid center-block">
@@ -52,8 +55,8 @@
                                             <h4 class="modal-title" id="share">Share with friends..</h4>
                                         </div>
                                         <div class="modal-body" id="share">
-                                            <div class="row"><a id="share-link" href="http://www.facebook.com"><i class="fa fa-facebook-official"></i></a>Share to Facebook</div>
-                                            <div class="row"><a id="share-link" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>Share to Twitter</div>
+                                            <div class="row"><div class="fb-share-button" data-href="http://liwen-hou.github.io" data-layout="button"></div>Share to Facebook</div>
+                                            <div class="row"><a data-count="none" class="twitter-share-button" href="https//twitter.com/share"></a>Share to Twitter</div>
                                             <div class="row"><i class="fa fa-envelope-o"></i>Send an E-mail</div>
                                             <div class="row">
                                                 <div class="col-sm-12" id="submitted">
@@ -811,10 +814,13 @@
             </div>
             <!-- FOOTER -->
             <footer>
-                <p>&copy; NUS CS3240 Interaction Design - AY 2014/2015 Sem 2.</p>
+                <p> Created by Hou Liwen, A0105595B
+                <br/> NUS CS3240 Interaction Design Lab Assignment 1- AY 2014/2015 Sem 2.
+                <br/> HTML5, CSS3, Bootstrap and jQuery</p>
             </footer>
             <!-- JavaScript placed at the end of the document so the pages load faster -->
             <script src="js/bootstrap.min.js"></script>
+
         </div>
     </body>
 </html>
