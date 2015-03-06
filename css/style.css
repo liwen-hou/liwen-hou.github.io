@@ -209,15 +209,15 @@ text-align: center;
 
     #zaha-profile {
         
-        display:flex;
-        flex-flow: column;
+/*        display:flex;*/
+/*        flex-flow: column;*/
     }
     
     #zaha-img {
-        order: 1;
+        -webkit-order: 1;
     }
     #zaha-description {
-        order: 2;
+        -webkit-order: 2;
         padding-left: 30px;
         padding-right: 30px;
     }
